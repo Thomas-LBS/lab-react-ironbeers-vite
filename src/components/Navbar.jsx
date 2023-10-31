@@ -1,3 +1,13 @@
-function Navbar() {}
+import { Link } from "react-router-dom"
 
-export default Navbar;
+function Navbar() {
+    return (
+        <nav className="Navbar">
+            <Link to="/">
+                <img className="logo" src="/src/assets/home-icon.png" />
+            </Link>
+        </nav>
+    )
+}
+
+export default Navbar
