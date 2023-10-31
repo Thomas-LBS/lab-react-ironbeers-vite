@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 function HomePage() {
     return (
@@ -24,4 +24,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default HomePage
