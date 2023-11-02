@@ -95,3 +95,53 @@ img.logo {
     width: 500px;
 }
 
+.AddBeer {
+    width: 100%;
+}
+
+.AddBeer h2 {
+    text-align: center
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+label {
+    font-weight: bold;
+    line-height: 1.75;
+    padding-left: 1em;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    height: 3em;
+    border-color:  rgb(148, 148, 247);
+}
+
+input[name=description] {
+    height: 15em;
+}
+
+button {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(148, 148, 247);
+    width: 100%;
+    padding: 8px 16px;
+    border-color:  rgb(148, 148, 247);
+    margin: 1em 0;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+    border: 2px solid yellow;
+    color: yellow;
+}
+
