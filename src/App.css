@@ -145,3 +145,19 @@ button:hover {
     color: yellow;
 }
 
+.filterBeer form {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.filterBeer label {
+    font-weight: unset;
+    line-height: 3em;
+    padding-left: 0;
+}
+
+
+

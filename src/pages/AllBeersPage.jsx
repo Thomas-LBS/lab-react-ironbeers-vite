@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
+import FilterBeers from "./FilterBeers"
 
 function AllBeersPage() {
     const [beers, setBeers] = useState([])
@@ -17,6 +18,7 @@ function AllBeersPage() {
 
     return (
         <div className="allBeers">
+        <FilterBeers/>
         {beers.map((beer) => {
 
             return (
