@@ -10,6 +10,7 @@ function AllBeersPage() {
             .then((response) => {
                 setBeers(response.data)
             })
+            .catch(err => console.log(err))
     }, [])
 
     
@@ -24,7 +25,7 @@ function AllBeersPage() {
                 <h3>{beer.name}</h3>
                 <h4>{beer.tagline}</h4>
                 <p><b>Created by: </b>{beer.contributed_by}</p>
-                <Link to="/beers/:beerId">Want to know more?</Link>
+                <Link to={`/beers/${beer._id}`}>Want to know more?</Link>
             </div>
             )
         })}

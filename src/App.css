@@ -71,3 +71,27 @@ img.logo {
     box-shadow: none;
 }
 
+.beerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.beerDetails img {
+    width: auto;
+    height: 500px;    
+    margin: 0 auto;
+    padding: 50px;
+    margin: 50px;
+}
+
+.beerDetails .headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+}
+
