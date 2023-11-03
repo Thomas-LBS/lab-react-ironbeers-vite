@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, NavLink } from 'react-router-dom'
 import { useState, useEffect } from "react"
 import axios from "axios"
 
@@ -19,7 +19,7 @@ function BeerDetailsPage() {
 
   return (
     <main>
-      <Link to="/beers"> ◀ Back</Link>
+      <NavLink to="/beers"> ◀ Back</NavLink>
       {!beer && <h3>Beer not found!</h3>}
 
 

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
 function AddBeerPage() {
     const [name, setName] = useState("")
@@ -9,6 +10,8 @@ function AddBeerPage() {
     const [brewersTips, setBrewersTips] = useState("")
     const [attenuationLevel, setAttenuationLevel] = useState(0)
     const [contributedBy, setContributedBy] = useState("")
+
+    const navigate = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -24,15 +27,18 @@ function AddBeerPage() {
         }
 
         axios.post("https://ih-beers-api2.herokuapp.com/beers/new", newBeer)
-        .then(()=> {
-            setName("");
-            setTagline("");
-            setDescription("");
-            setFirstBrewed("");
-            setBrewersTips("");
-            setAttenuationLevel(0);
-            setContributedBy("");
-        })
+            .then(() => {
+                setName("")
+                setTagline("")
+                setDescription("")
+                setFirstBrewed("")
+                setBrewersTips("")
+                setAttenuationLevel(0)
+                setContributedBy("")
+
+                // Navigate to the `/` page
+                navigate('/beers')
+            })
 
         console.log("Submitted: ", newBeer)
     }

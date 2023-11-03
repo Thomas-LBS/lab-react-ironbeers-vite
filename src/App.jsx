@@ -1,4 +1,5 @@
 import "./App.css"
+
 import Navbar from "./components/Navbar"
 import HomePage from "./pages/HomePage"
 import AllBeersPage from "./pages/AllBeersPage"

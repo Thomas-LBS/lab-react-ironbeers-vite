@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import axios from "axios"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import FilterBeers from "./FilterBeers"
 
 function AllBeersPage() {
@@ -27,7 +27,7 @@ function AllBeersPage() {
                 <h3>{beer.name}</h3>
                 <h4>{beer.tagline}</h4>
                 <p><b>Created by: </b>{beer.contributed_by}</p>
-                <Link to={`/beers/${beer._id}`}>Want to know more?</Link>
+                <NavLink to={`/beers/${beer._id}`}>Want to know more?</NavLink>
             </div>
             )
         })}
